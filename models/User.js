@@ -38,7 +38,7 @@ const UserSchema = mongoose.Schema ({
         default: []
     },
     orders: [{
-        type: Schema.Types.ObjectId, ref: 'Order'
+        type: mongoose.Schema.Types.ObjectId, ref: 'Order'
     }]
 }, {minimize: false});
 
